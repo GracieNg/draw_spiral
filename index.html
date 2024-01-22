@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My p5js Sketch</title>
+    <!-- mathjs -->
+    <script src="./js/lib/math.js"></script>
+    <!-- our  script -->
+    <script type="module" src="./js/main.js"></script>
+
+    <style>
+        body {
+            max-width: 85%;
+            margin: auto 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            color: #eee;
+            background-color: #222;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        grid-elem {
+            display: block;
+            padding: 0.875rem;
+            border-right: 1px #bbb solid;
+        }
+        .first {
+            border-top: 1px #999 dashed;
+        }
+    </style>
+</head>
+<body>
+    <grid>
+        <!-- row -->
+        <grid-elem>
+            <h1>My Sketch Title</h1>
+        </grid-elem>
+        <grid-elem id="sketch">
+            <!-- sketch goes here -->
+        </grid-elem>
+
+        <!-- row -->
+        <grid-elem class="first">
+            <h1>Instructions</h1>
+        </grid-elem>
+        <grid-elem class="first">
+            <p>Make a sketch and make it good</p>
+        </grid-elem>
+    </grid>
+
+</body>
+</html>
